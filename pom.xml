@@ -30,7 +30,20 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		
 		</dependency>
+		<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>http://20.185.183.59:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>http://20.185.183.59:8081/repository/maven-snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 	</dependencies>
 
 	<build>
